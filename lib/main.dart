@@ -38,7 +38,7 @@ class MyApp extends StatelessWidget {
         builder: (context,snapshot){
           if(snapshot.hasData){
             bool gecisIzni = snapshot.hasData;
-            return gecisIzni ? Anasayfa() : LoginEkrani();
+            return gecisIzni ? LoginEkrani()  : Anasayfa();
           }else{
             return Container();
           }
